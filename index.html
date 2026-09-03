@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. MAHARANI BOILER INDONESIA - Industrial Heating & Cooling Systems</title>
+    
+    <!-- FAVICON (Logo di Tab Browser) -->
+    <link rel="icon" type="image/jpeg" href="LOGOMBI.jpeg">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary-color: #0d3b66;
+            --secondary-color: #f4d35e;
+            --accent-color: #ee964b;
+            --dark-color: #1d2d44;
+            --light-color: #f8f9fa;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.8rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .mbi-badge {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 1.1rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        .logo h1 {
+            font-size: 1.1rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(29, 45, 68, 0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            height: 85vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h2 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 750px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background-color: #e07a2c;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 25%;
+        }
+
+        /* Grid System & Product Cards */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .product-img {
+            width: 100%;
+            max-width: 180px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .product-img:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.88rem;
+            color: #555;
+        }
+
+        /* Technical Tables Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        table.trouble-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        table.trouble-table th {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        table.trouble-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        table.trouble-table tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+
+        .system-subtitle {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+
+        .gallery-category-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .prod-badge {
+            display: inline-block;
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+
+        /* Photo Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: #fff;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--dark-color);
+            font-size: 0.9rem;
+        }
+
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .video-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .video-info h4 {
+            color: var(--primary-color);
+        }
+
+        /* Social Media Buttons */
+        .social-box {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .bg-wa { background-color: #25d366; }
+        .bg-email { background-color: #ea4335; }
+        .bg-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .bg-fb { background-color: #1877f2; }
+        .bg-tiktok { background-color: #000000; }
+
+        /* Floating Social Bar */
+        .floating-socials {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .floating-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 22px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-logo {
+            margin-bottom: 15px;
+        }
+
+        .footer-logo .mbi-badge {
+            font-size: 1.3rem;
+            padding: 6px 14px;
+        }
+
+        .footer-socials {
+            margin-bottom: 15px;
+        }
+
+        .footer-socials a {
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-socials a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Lightbox Modal (Zoom Foto) Styling */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.88);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+
+        .lightbox-caption {
+            color: #fff;
+            margin-top: 15px;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .lightbox-close:hover {
+            color: var(--secondary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive Mobile Navigation */
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 0.85rem;
+            }
+
+            .mbi-badge {
+                font-size: 0.9rem;
+                padding: 3px 8px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            table.trouble-table th, table.trouble-table td {
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">
+                    <span class="mbi-badge">MBI</span>
+                    <h1>CV. MAHARANI BOILER INDONESIA</h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#solutions">Solusi Sistem</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Kontak & Email</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Solusi Terpercaya Boiler & Cooling Tower System</h2>
+        <p>Spesialis Water Treatment Chemical, Chemical Cleaning, Overhaul, dan Perawatan Sistem Pemanas & Pendingin Industri di Seluruh Indonesia.</p>
+        <a href="https://wa.me/628121802071" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi WhatsApp Kami</a>
+    </section>
+
+    <!-- Produk & Layanan Produk Kimia -->
+    <section id="products">
+        <div class="section-title">
+            <h2>Produk Chemical Maintenance Utama</h2>
+        </div>
+        <div class="grid-container">
+            <!-- NIREC 800 -->
+            <div class="card">
+                <img src="800.jpeg" alt="NIREC 800 - Boiler Water Treatment" class="product-img zoomable">
+                <h3>NIREC 800</h3>
+                <p><strong>Boiler Water Treatment:</strong> Mencegah kerak & karat pada media pipa dan dinding boiler. Membentuk lapisan film pelindung & meningkatkan Heat Transfer. (Netto: 30 Ltr)</p>
+            </div>
+
+            <!-- NIREC 700 K -->
+            <div class="card">
+                <img src="700K.jpeg" alt="NIREC 700 K - Anti Kerak Cooling Tower" class="product-img zoomable">
+                <h3>NIREC 700 K</h3>
+                <p><strong>Anti Kerak Cooling Tower:</strong> Control Scale & Corrosion Inhibitor efisien untuk mencegah kerak & karat pada media cooling tower. (Netto: 30 Ltr)</p>
+            </div>
+
+            <!-- NIREC 700 L -->
+            <div class="card">
+                <img src="700L.jpeg" alt="NIREC 700 L - Anti Lumut" class="product-img zoomable">
+                <h3>NIREC 700 L</h3>
+                <p><strong>Anti Lumut (Algae & Slime Control):</strong> Mencegah pembentukan lumut dan mengontrol bakteri anaerobic pada open cooling system. (Netto: 30 Ltr)</p>
+            </div>
+
+            <!-- NIREC 900 -->
+            <div class="card">
+                <img src="900.jpeg" alt="NIREC 900 - Scale Remover" class="product-img zoomable">
+                <h3>NIREC 900</h3>
+                <p><strong>Scale Remover:</strong> Cairan pembersih kerak dan karat pada mesin Boiler, Cooling Tower, Chiller, Cooler, dan Heat Exchanger. (Netto: 30 Ltr)</p>
+            </div>
+
+            <!-- NIREC 900 A -->
+            <div class="card">
+                <img src="900A.jpeg" alt="NIREC 900 A - Neutralizer" class="product-img zoomable">
+                <h3>NIREC 900 A</h3>
+                <p><strong>Neutralizer:</strong> Menetralkan sisa-sisa asam yang masih melekat pada mesin setelah dilakukan proses cleaning agar aman. (Netto: 30 Ltr)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Permasalahan & Solusi (Boiler & Cooling Tower System) -->
+    <section id="solutions" style="background-color: var(--light-color);">
+        <div class="section-title">
+            <h2>Permasalahan & Solusi Sistem Industri</h2>
+        </div>
+
+        <!-- I. BOILER SYSTEM -->
+        <div class="system-subtitle">
+            <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
+            <span>I. BOILER SYSTEM</span>
+        </div>
+        <p style="margin-bottom: 15px; font-size: 0.95rem;">
+            Semua sistem yang memanfaatkan air sebagai sarana media pemanas dan diubah menjadi uap (steam) akan selalu menghadapi masalah operasional seperti Kerak (Scale), Karat (Corrosion), dan Pencemaran (Carry Over).
+        </p>
+
+        <div class="table-responsive">
+            <table class="trouble-table">
+                <thead>
+                    <tr>
+                        <th>Masalah</th>
+                        <th>Penyebab</th>
+                        <th>Lokasi</th>
+                        <th>Akibat</th>
+                        <th>Kontrol / Solusi MBI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kerak (Scale)</strong></td>
+                        <td>Ca, Mg, SiO2</td>
+                        <td>Lorong, Pipa Api</td>
+                        <td>Transfer Panas Terhambat, Bahan Bakar Boros, Pipa Rusak</td>
+                        <td>Softener & <span class="prod-badge">NIREC 800</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Karat (Corrosion)</strong></td>
+                        <td>Oxygen, Chlorine, Chloride</td>
+                        <td>Lorong, Pipa Api, Dinding Boiler</td>
+                        <td>Pipa Rusak, Pipa Bocor</td>
+                        <td>Chemical Treatment & Naikan Temperatur</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Primming & Foaming</strong></td>
+                        <td>Detergent, TDS Alkalinity &gt; 10.000</td>
+                        <td>Air Boiler</td>
+                        <td>Carry Over</td>
+                        <td>Blowdown & Chem Anti Foam</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Caustic Embrittlement</strong></td>
+                        <td>Alkalinity &gt; 10.000</td>
+                        <td>Sambungan Pipa Api</td>
+                        <td>Retak, Rusak, dan Bocor</td>
+                        <td>Blowdown Control</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- II. COOLING TOWER SYSTEM -->
+        <div class="system-subtitle" style="margin-top: 40px;">
+            <i class="fas fa-snowflake" style="color: #0288d1;"></i>
+            <span>II. COOLING TOWER SYSTEM</span>
+        </div>
+        <p style="margin-bottom: 15px; font-size: 0.95rem;">
+            Cooling Tower System menghubungkan air dengan atmosfer sebagai sarana pendingin untuk didistribusikan ke Chiller, Cooller, Heat Exchanger, dan mesin lainnya. Sistem ini perlu dijaga dengan perawatan rutin agar sirkulasi air tetap optimal.
+        </p>
+
+        <div class="table-responsive">
+            <table class="trouble-table">
+                <thead>
+                    <tr>
+                        <th>Masalah</th>
+                        <th>Penyebab</th>
+                        <th>Lokasi</th>
+                        <th>Akibat</th>
+                        <th>Kontrol / Solusi MBI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kerak (Scale)</strong></td>
+                        <td>Ca, Mg, Alkali tinggi</td>
+                        <td>Heat Exchanger, Filler & Piping</td>
+                        <td>Transfer Panas Terhambat, Efisiensi Turun</td>
+                        <td>Chemical Treatment <span class="prod-badge">NIREC 700 K</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Karat (Corrosion)</strong></td>
+                        <td>Oksigen, Mineral, Impurities</td>
+                        <td>Piping System</td>
+                        <td>Pipa Bocor & Kerusakan Alat</td>
+                        <td>Chemical Treatment Corrosion Inhibitor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lumut & Bakteri</strong></td>
+                        <td>Micro Organic, Bacteria</td>
+                        <td>Basin, Filler, Piping, Heat Exchanger</td>
+                        <td>Kotor, Flow Air Terganggu & Menyumbat</td>
+                        <td>Chemical Anti Lumut <span class="prod-badge">NIREC 700 L</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Galeri Foto Pekerjaan -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Galeri Foto Pekerjaan</h2>
+        </div>
+
+        <!-- Kategori Pekerjaan Boiler (TETAP SESUAI ASLI) -->
+        <div class="gallery-category-title">
+            <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
+            Pekerjaan Boiler System
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="boiler1.jpeg" alt="Proses Cleaning & Removal Kerak Boiler" class="zoomable">
+                <div class="gallery-caption">Proses Cleaning & Removal Kerak Boiler</div>
+            </div>
+            <div class="gallery-item">
+                <img src="boiler2.jpeg" alt="Inspeksi & Pemeliharaan Dalam Tangki" class="zoomable">
+                <div class="gallery-caption">Inspeksi & Pemeliharaan Dalam Tangki</div>
+            </div>
+            <div class="gallery-item">
+                <img src="boiler3.jpeg" alt="Instalasi & Perbaikan Piping System" class="zoomable">
+                <div class="gallery-caption">Instalasi & Perbaikan Piping System</div>
+            </div>
+            <div class="gallery-item">
+                <img src="boiler4.jpeg" alt="Tim Teknisi Profesional di Lapangan" class="zoomable">
+                <div class="gallery-caption">Tim Teknisi Profesional di Lapangan</div>
+            </div>
+        </div>
+
+        <!-- Kategori Pekerjaan Cooling Tower (PEMBUATAN & PEMASANGAN) -->
+        <div class="gallery-category-title">
+            <i class="fas fa-snowflake" style="color: #0288d1;"></i>
+            Pembuatan & Pemasangan Cooling Tower System
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="cooling1.jpeg" alt="Proses Pembuatan Unit Cooling Tower Industri" class="zoomable">
+                <div class="gallery-caption">Proses Pembuatan Unit Cooling Tower Industri</div>
+            </div>
+            <div class="gallery-item">
+                <img src="cooling2.jpeg" alt="Pemasangan & Pengakitan Media Filler Cooling Tower" class="zoomable">
+                <div class="gallery-caption">Pemasangan & Perakitan Media Filler Cooling Tower</div>
+            </div>
+            <div class="gallery-item">
+                <img src="cooling3.jpeg" alt="Pemasangan System Perpipaan (Piping) Cooling Tower" class="zoomable">
+                <div class="gallery-caption">Pemasangan System Perpipaan (Piping) Cooling Tower</div>
+            </div>
+            <div class="gallery-item">
+                <img src="cooling4.jpeg" alt="Proses Instalasi & Pengujian Unit Cooling Tower" class="zoomable">
+                <div class="gallery-caption">Proses Instalasi & Pengujian Unit Cooling Tower</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dokumentasi Video -->
+    <section id="video" style="background-color: var(--light-color);">
+        <div class="section-title">
+            <h2>Dokumentasi Video</h2>
+        </div>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/o18dM-lIHVM?enablejsapi=1" 
+                        title="Demo Cleaning Boiler" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <h4>Proses Chemical Cleaning Boiler</h4>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls poster="poster-video.jpg">
+                        <source src="boiler.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutaran video.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h4>Prosedur Overhaul & Inspeksi Piping</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Kontak Lengkap & Email -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Kontak Lengkap & Layanan Email</h2>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Resmi</h3>
+                <p>
+                    <a href="mailto:maharani.cahayateknik@yahoo.com">maharani.cahayateknik@yahoo.com</a><br>
+                    <a href="mailto:dominicusaguswardoyo@gmail.com">dominicusaguswardoyo@gmail.com</a>
+                </p>
+            </div>
+            <div class="card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Telepon & WhatsApp</h3>
+                <p>
+                    <strong>HP / WA:</strong> <a href="https://wa.me/628121802071" target="_blank">0812-1802-071</a><br>
+                    <strong>Telp Kantor:</strong> (021) 59304408<br>
+                    <strong>Faks:</strong> (021) 59304408
+                </p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Alamat Perusahaan</h3>
+                <p>Jl. Kepodang I, Bumi Pasar Kemis Indah, Blok G-2 No.19, Tangerang - Banten, 15560</p>
+            </div>
+        </div>
+
+        <!-- Tombol Media Sosial & Email Direct -->
+        <div class="social-box">
+            <a href="https://wa.me/628121802071" class="social-btn bg-wa" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat WhatsApp
+            </a>
+            <a href="mailto:maharani.cahayateknik@yahoo.com" class="social-btn bg-email">
+                <i class="fas fa-envelope"></i> Kirim Email
+            </a>
+            <a href="https://www.instagram.com/maharaniboilerindonesia" class="social-btn bg-ig" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61593804041718" class="social-btn bg-fb" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" class="social-btn bg-tiktok" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating Social & Email Buttons -->
+    <div class="floating-socials">
+        <a href="https://wa.me/628121802071" class="floating-btn bg-wa" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:maharani.cahayateknik@yahoo.com" class="floating-btn bg-email" title="Kirim Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/maharaniboilerindonesia" class="floating-btn bg-ig" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61593804041718" class="floating-btn bg-fb" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" class="floating-btn bg-tiktok" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <span class="mbi-badge">MBI</span>
+        </div>
+        <div class="footer-socials">
+            <a href="https://wa.me/628121802071" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:maharani.cahayateknik@yahoo.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/maharaniboilerindonesia" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61593804041718" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2026 CV. MAHARANI BOILER INDONESIA. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Popup Modal Structure -->
+    <div class="lightbox-modal" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoom Foto">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- JavaScript Navigation & Lightbox -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+            });
+        });
+
+        // Lightbox Zoom functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        // Target all zoomable images
+        document.querySelectorAll('.zoomable').forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = image.src;
+                lightboxCaption.textContent = image.alt || '';
+            });
+        });
+
+        // Close Lightbox on Click Close Button or Outside Image
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Close Lightbox on ESC key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
