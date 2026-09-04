@@ -182,6 +182,63 @@
             left: 25%;
         }
 
+        /* Services Cards Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 25px;
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card ul li {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .service-card ul li::before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
         /* Grid System & Product Cards */
         .grid-container {
             display: grid;
@@ -233,50 +290,6 @@
             color: #555;
         }
 
-        /* Technical Tables Styling */
-        .table-responsive {
-            overflow-x: auto;
-            margin-top: 20px;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        table.trouble-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-            text-align: left;
-            font-size: 0.9rem;
-        }
-
-        table.trouble-table th {
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 12px 15px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        table.trouble-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        table.trouble-table tr:nth-child(even) {
-            background-color: #f9fbfd;
-        }
-
-        .system-subtitle {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 700;
-        }
-
         .gallery-category-title {
             font-size: 1.2rem;
             color: var(--primary-color);
@@ -288,17 +301,6 @@
             font-weight: 700;
             border-left: 4px solid var(--accent-color);
             padding-left: 10px;
-        }
-
-        .prod-badge {
-            display: inline-block;
-            background-color: #e3f2fd;
-            color: #0d47a1;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            margin-top: 4px;
         }
 
         /* Photo Gallery */
@@ -573,11 +575,6 @@
             .hero p {
                 font-size: 0.95rem;
             }
-
-            table.trouble-table th, table.trouble-table td {
-                padding: 8px 10px;
-                font-size: 0.8rem;
-            }
         }
     </style>
 </head>
@@ -597,8 +594,8 @@
             </div>
             <ul class="nav-links" id="nav-list">
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#products">Produk</a></li>
-                <li><a href="#solutions">Solusi Sistem</a></li>
+                <li><a href="#services">Layanan Jasa</a></li>
+                <li><a href="#products">Produk Chemical</a></li>
                 <li><a href="#gallery">Galeri</a></li>
                 <li><a href="#video">Video</a></li>
                 <li><a href="#contact">Kontak & Email</a></li>
@@ -613,7 +610,60 @@
         <a href="https://wa.me/628121802071" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi WhatsApp Kami</a>
     </section>
 
-    <!-- Produk & Layanan Produk Kimia -->
+    <!-- Layanan & Jasa Utama MBI (POSISI ATAS) -->
+    <section id="services" style="background-color: var(--light-color);">
+        <div class="section-title">
+            <h2>Layanan & Jasa Utama</h2>
+        </div>
+        <div class="services-grid">
+            <!-- 1. JASA BOILER SYSTEM -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
+                </div>
+                <h3>Jasa Boiler System</h3>
+                <ul>
+                    <li>Chemical Cleaning & Descaling Boiler</li>
+                    <li>Overhaul & Retubing Pipa Api/Air</li>
+                    <li>Perawatan & Inspeksi Rutin Berkala</li>
+                    <li>Perbaikan Piping, Valve & Mechanical System</li>
+                    <li>Pembersihan Kerak & Karat Tangki Uap</li>
+                </ul>
+            </div>
+
+            <!-- 2. JASA COOLING TOWER SYSTEM -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-snowflake" style="color: #0288d1;"></i>
+                </div>
+                <h3>Jasa Cooling Tower System</h3>
+                <ul>
+                    <li>Pembuatan & Pemasangan Unit Cooling Tower</li>
+                    <li>Penggantian & Perakitan Media Filler</li>
+                    <li>Pembersihan Lumut, Slime & Kerak Basin</li>
+                    <li>Instalasi System Perpipaan & Dosing Pump</li>
+                    <li>Perawatan & Inspeksi Sistem Pendingin</li>
+                </ul>
+            </div>
+
+            <!-- 3. WATER TREATMENT CHEMICAL -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-flask" style="color: #2e7d32;"></i>
+                </div>
+                <h3>Water Treatment Chemical</h3>
+                <ul>
+                    <li>Pencegahan Kerak & Karat Sistem Air Industri</li>
+                    <li>Pengontrolan Lumut & Bakteri Anaerobik</li>
+                    <li>Pembersihan & Pengangkatan Kerak Membandel</li>
+                    <li>Penetrasi Sisa Asam (Neutralizer System)</li>
+                    <li>Konsultasi & Analisis Kualitas Air Operasional</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Chemical Maintenance (POSISI BAWAH LAYANAN JASA) -->
     <section id="products">
         <div class="section-title">
             <h2>Produk Chemical Maintenance Utama</h2>
@@ -656,119 +706,13 @@
         </div>
     </section>
 
-    <!-- Permasalahan & Solusi (Boiler & Cooling Tower System) -->
-    <section id="solutions" style="background-color: var(--light-color);">
-        <div class="section-title">
-            <h2>Permasalahan & Solusi Sistem Industri</h2>
-        </div>
-
-        <!-- I. BOILER SYSTEM -->
-        <div class="system-subtitle">
-            <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
-            <span>I. BOILER SYSTEM</span>
-        </div>
-        <p style="margin-bottom: 15px; font-size: 0.95rem;">
-            Semua sistem yang memanfaatkan air sebagai sarana media pemanas dan diubah menjadi uap (steam) akan selalu menghadapi masalah operasional seperti Kerak (Scale), Karat (Corrosion), dan Pencemaran (Carry Over).
-        </p>
-
-        <div class="table-responsive">
-            <table class="trouble-table">
-                <thead>
-                    <tr>
-                        <th>Masalah</th>
-                        <th>Penyebab</th>
-                        <th>Lokasi</th>
-                        <th>Akibat</th>
-                        <th>Kontrol / Solusi MBI</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Kerak (Scale)</strong></td>
-                        <td>Ca, Mg, SiO2</td>
-                        <td>Lorong, Pipa Api</td>
-                        <td>Transfer Panas Terhambat, Bahan Bakar Boros, Pipa Rusak</td>
-                        <td>Softener & <span class="prod-badge">NIREC 800</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Karat (Corrosion)</strong></td>
-                        <td>Oxygen, Chlorine, Chloride</td>
-                        <td>Lorong, Pipa Api, Dinding Boiler</td>
-                        <td>Pipa Rusak, Pipa Bocor</td>
-                        <td>Chemical Treatment & Naikan Temperatur</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Primming & Foaming</strong></td>
-                        <td>Detergent, TDS Alkalinity &gt; 10.000</td>
-                        <td>Air Boiler</td>
-                        <td>Carry Over</td>
-                        <td>Blowdown & Chem Anti Foam</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Caustic Embrittlement</strong></td>
-                        <td>Alkalinity &gt; 10.000</td>
-                        <td>Sambungan Pipa Api</td>
-                        <td>Retak, Rusak, dan Bocor</td>
-                        <td>Blowdown Control</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- II. COOLING TOWER SYSTEM -->
-        <div class="system-subtitle" style="margin-top: 40px;">
-            <i class="fas fa-snowflake" style="color: #0288d1;"></i>
-            <span>II. COOLING TOWER SYSTEM</span>
-        </div>
-        <p style="margin-bottom: 15px; font-size: 0.95rem;">
-            Cooling Tower System menghubungkan air dengan atmosfer sebagai sarana pendingin untuk didistribusikan ke Chiller, Cooller, Heat Exchanger, dan mesin lainnya. Sistem ini perlu dijaga dengan perawatan rutin agar sirkulasi air tetap optimal.
-        </p>
-
-        <div class="table-responsive">
-            <table class="trouble-table">
-                <thead>
-                    <tr>
-                        <th>Masalah</th>
-                        <th>Penyebab</th>
-                        <th>Lokasi</th>
-                        <th>Akibat</th>
-                        <th>Kontrol / Solusi MBI</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Kerak (Scale)</strong></td>
-                        <td>Ca, Mg, Alkali tinggi</td>
-                        <td>Heat Exchanger, Filler & Piping</td>
-                        <td>Transfer Panas Terhambat, Efisiensi Turun</td>
-                        <td>Chemical Treatment <span class="prod-badge">NIREC 700 K</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Karat (Corrosion)</strong></td>
-                        <td>Oksigen, Mineral, Impurities</td>
-                        <td>Piping System</td>
-                        <td>Pipa Bocor & Kerusakan Alat</td>
-                        <td>Chemical Treatment Corrosion Inhibitor</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Lumut & Bakteri</strong></td>
-                        <td>Micro Organic, Bacteria</td>
-                        <td>Basin, Filler, Piping, Heat Exchanger</td>
-                        <td>Kotor, Flow Air Terganggu & Menyumbat</td>
-                        <td>Chemical Anti Lumut <span class="prod-badge">NIREC 700 L</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
     <!-- Galeri Foto Pekerjaan -->
-    <section id="gallery">
+    <section id="gallery" style="background-color: var(--light-color);">
         <div class="section-title">
             <h2>Galeri Foto Pekerjaan</h2>
         </div>
 
-        <!-- Kategori Pekerjaan Boiler (TETAP SESUAI ASLI) -->
+        <!-- Kategori Pekerjaan Boiler -->
         <div class="gallery-category-title">
             <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
             Pekerjaan Boiler System
@@ -792,7 +736,7 @@
             </div>
         </div>
 
-        <!-- Kategori Pekerjaan Cooling Tower (PEMBUATAN & PEMASANGAN) -->
+        <!-- Kategori Pekerjaan Cooling Tower -->
         <div class="gallery-category-title">
             <i class="fas fa-snowflake" style="color: #0288d1;"></i>
             Pembuatan & Pemasangan Cooling Tower System
@@ -803,7 +747,7 @@
                 <div class="gallery-caption">Proses Pembuatan Unit Cooling Tower Industri</div>
             </div>
             <div class="gallery-item">
-                <img src="cooling2.jpeg" alt="Pemasangan & Pengakitan Media Filler Cooling Tower" class="zoomable">
+                <img src="cooling2.jpeg" alt="Pemasangan & Perakitan Media Filler Cooling Tower" class="zoomable">
                 <div class="gallery-caption">Pemasangan & Perakitan Media Filler Cooling Tower</div>
             </div>
             <div class="gallery-item">
@@ -818,7 +762,7 @@
     </section>
 
     <!-- Dokumentasi Video -->
-    <section id="video" style="background-color: var(--light-color);">
+    <section id="video">
         <div class="section-title">
             <h2>Dokumentasi Video</h2>
         </div>
@@ -852,13 +796,13 @@
     </section>
 
     <!-- Informasi Kontak Lengkap & Email -->
-    <section id="contact">
+    <section id="contact" style="background-color: var(--light-color);">
         <div class="section-title">
             <h2>Kontak Lengkap & Layanan Email</h2>
         </div>
         <div class="grid-container">
             <div class="card">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" style="font-size: 1.8rem; color: var(--accent-color); margin-bottom: 10px;"></i>
                 <h3>Email Resmi</h3>
                 <p>
                     <a href="mailto:maharani.cahayateknik@yahoo.com">maharani.cahayateknik@yahoo.com</a><br>
@@ -866,7 +810,7 @@
                 </p>
             </div>
             <div class="card">
-                <i class="fas fa-phone-alt"></i>
+                <i class="fas fa-phone-alt" style="font-size: 1.8rem; color: var(--accent-color); margin-bottom: 10px;"></i>
                 <h3>Telepon & WhatsApp</h3>
                 <p>
                     <strong>HP / WA:</strong> <a href="https://wa.me/628121802071" target="_blank">0812-1802-071</a><br>
@@ -875,7 +819,7 @@
                 </p>
             </div>
             <div class="card">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt" style="font-size: 1.8rem; color: var(--accent-color); margin-bottom: 10px;"></i>
                 <h3>Alamat Perusahaan</h3>
                 <p>Jl. Kepodang I, Bumi Pasar Kemis Indah, Blok G-2 No.19, Tangerang - Banten, 15560</p>
             </div>
