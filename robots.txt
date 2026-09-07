@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://maharaniboilerindonesia.github.io/sitemap.xml 
