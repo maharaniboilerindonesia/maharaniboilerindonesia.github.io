@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. MAHARANI BOILER INDONESIA - Industrial Heating & Cooling Systems</title>
+    <title>Maharani Boiler dan Cooling Tower - Perawatan Boiler & Cooling Tower Industri</title>
     
-    <!-- SEO Meta Tags Teroptimasi Kata Kunci Boiler & Cooling Tower -->
-    <meta name="description" content="CV. Maharani Boiler Indonesia - Spesialis Jasa Chemical Cleaning Boiler, Maintenance & Overhaul, Water Treatment Chemical, serta Pembuatan & Pemasangan Cooling Tower System.">
-    <meta name="keywords" content="CV Maharani Boiler Indonesia, Jasa Cleaning Boiler, Chemical Boiler, Pembuatan Cooling Tower, Water Treatment Chemical, Overhaul Boiler, Maintenance Cooling Tower, NIREC 800, Chemical Boiler Tangerang, Service Boiler Indonesia">
-    <meta name="author" content="CV. MAHARANI BOILER INDONESIA">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Maharani Boiler dan Cooling Tower bergerak dalam bidang perawatan Boiler dan Cooling Tower, Chemical Cleaning, Water Treatment Chemical, serta Overhaul Sistem Industri.">
+    <meta name="keywords" content="Maharani Boiler dan Cooling Tower, Jasa Cleaning Boiler, Chemical Boiler, Pembuatan Cooling Tower, Water Treatment Chemical, Overhaul Boiler, NIREC 800, NIREC 900">
+    <meta name="author" content="Maharani Boiler dan Cooling Tower">
     <meta name="robots" content="index, follow">
-    <meta name="google-site-verification" content="FbZrljRs2WPhiV52zWxgIhs9gAU2qcbYimfflwLZc2A" />
     <link rel="canonical" href="https://maharaniboilerindonesia.github.io/" />
 
-    <!-- Schema.org WebSite Name (Mengganti Label Nama "GitHub" di Hasil Google menjadi "CV. Maharani Boiler Indonesia") -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "CV. Maharani Boiler Indonesia",
-      "alternateName": ["Maharani Boiler Indonesia", "MBI"],
-      "url": "https://maharaniboilerindonesia.github.io/"
-    }
-    </script>
-
-    <!-- Schema.org Organization & LocalBusiness Data -->
+    <!-- Schema.org LocalBusiness Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "CV. MAHARANI BOILER INDONESIA",
+      "name": "Maharani Boiler dan Cooling Tower",
       "image": "https://maharaniboilerindonesia.github.io/LOGOMBI.jpeg",
       "@id": "https://maharaniboilerindonesia.github.io/",
       "url": "https://maharaniboilerindonesia.github.io/",
@@ -42,40 +30,17 @@
         "addressRegion": "Banten",
         "postalCode": "15560",
         "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.166667,
-        "longitude": 106.55
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "sameAs": [
-        "https://www.instagram.com/maharaniboilerindonesia",
-        "https://www.facebook.com/profile.php?id=61593804041718",
-        "https://www.tiktok.com/@maharaniboilerindonesia"
-      ]
+      }
     }
     </script>
 
-    <!-- Open Graph (Tampilan Link saat Dibagikan di WhatsApp / Sosmed) -->
-    <meta property="og:title" content="CV. MAHARANI BOILER INDONESIA - Layanan Boiler & Cooling Tower System">
-    <meta property="og:description" content="Layanan Spesialis Chemical Cleaning Boiler, Perawatan Cooling Tower, dan Suplier Water Treatment Chemical Industri Terpercaya di Indonesia.">
-    <meta property="og:image" content="LOGOMBI.jpeg">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maharani Boiler dan Cooling Tower">
+    <meta property="og:description" content="Maharani Boiler dan Cooling Tower bergerak dalam bidang perawatan Boiler dan Cooling Tower.">
+    <meta property="og:image" content="https://maharaniboilerindonesia.github.io/LOGOMBI.jpeg">
     <meta property="og:type" content="website">
 
-    <!-- FAVICON (Logo di Tab Browser) -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/jpeg" href="LOGOMBI.jpeg">
     
     <!-- Google Fonts & FontAwesome Icons -->
@@ -108,7 +73,6 @@
             background-color: #fff;
         }
 
-        /* Header & Nav */
         header {
             background-color: var(--primary-color);
             color: #fff;
@@ -146,7 +110,7 @@
         }
 
         .logo h1 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #ffffff;
             font-weight: 700;
             letter-spacing: 0.5px;
@@ -180,7 +144,6 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(29, 45, 68, 0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
             height: 85vh;
@@ -224,7 +187,6 @@
             transform: translateY(-2px);
         }
 
-        /* Sections */
         section {
             padding: 70px 8%;
         }
@@ -252,67 +214,41 @@
             left: 25%;
         }
 
-        /* Services Cards Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .service-card {
-            background-color: #fff;
+        .content-block {
+            background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            padding: 25px;
-            border-top: 4px solid var(--primary-color);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .content-block h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-
-        .service-icon {
-            font-size: 2.2rem;
-            color: var(--accent-color);
+        .content-block p, .content-block ul {
+            font-size: 0.95rem;
+            color: #555;
             margin-bottom: 15px;
         }
 
-        .service-card h3 {
-            font-size: 1.2rem;
-            color: var(--primary-color);
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
-
-        .service-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .service-card ul li {
-            font-size: 0.9rem;
-            color: #555;
-            margin-bottom: 8px;
-            position: relative;
+        .content-block ul {
             padding-left: 20px;
         }
 
-        .service-card ul li::before {
-            content: "✓";
-            color: var(--accent-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
+        .content-block ul li {
+            margin-bottom: 8px;
         }
 
-        /* Grid System & Product Cards */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
@@ -320,7 +256,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            padding: 20px;
+            padding: 25px;
             text-align: center;
             border-top: 4px solid var(--primary-color);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -373,7 +309,6 @@
             padding-left: 10px;
         }
 
-        /* Photo Gallery */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -413,45 +348,6 @@
             font-size: 0.9rem;
         }
 
-        /* Video Grid */
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .video-card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            background: #000;
-        }
-
-        .video-container iframe, .video-container video {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: 0;
-        }
-
-        .video-info {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .video-info h4 {
-            color: var(--primary-color);
-        }
-
-        /* Social Media Buttons */
         .social-box {
             display: flex;
             justify-content: center;
@@ -484,7 +380,6 @@
         .bg-fb { background-color: #1877f2; }
         .bg-tiktok { background-color: #000000; }
 
-        /* Floating Social Bar */
         .floating-socials {
             position: fixed;
             bottom: 20px;
@@ -513,7 +408,6 @@
             transform: scale(1.1);
         }
 
-        /* Footer Styling */
         footer {
             background-color: var(--dark-color);
             color: #fff;
@@ -546,7 +440,6 @@
             color: var(--secondary-color);
         }
 
-        /* Lightbox Modal (Zoom Foto) Styling */
         .lightbox-modal {
             display: none;
             position: fixed;
@@ -560,7 +453,6 @@
             align-items: center;
             flex-direction: column;
             padding: 20px;
-            animation: fadeIn 0.3s ease;
         }
 
         .lightbox-modal.active {
@@ -571,7 +463,6 @@
             max-width: 90%;
             max-height: 80vh;
             border-radius: 8px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
             object-fit: contain;
         }
 
@@ -580,7 +471,6 @@
             margin-top: 15px;
             font-size: 1rem;
             text-align: center;
-            font-weight: 500;
         }
 
         .lightbox-close {
@@ -591,33 +481,10 @@
             font-size: 2.5rem;
             font-weight: bold;
             cursor: pointer;
-            transition: color 0.3s;
         }
 
-        .lightbox-close:hover {
-            color: var(--secondary-color);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Responsive Mobile Navigation */
         @media (max-width: 768px) {
-            .logo h1 {
-                font-size: 0.85rem;
-            }
-
-            .mbi-badge {
-                font-size: 0.9rem;
-                padding: 3px 8px;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
+            .menu-toggle { display: block; }
             .nav-links {
                 display: none;
                 flex-direction: column;
@@ -629,22 +496,9 @@
                 padding: 20px;
                 box-shadow: 0 5px 10px rgba(0,0,0,0.2);
             }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 10px 0;
-            }
-
-            .hero h2 {
-                font-size: 1.6rem;
-            }
-
-            .hero p {
-                font-size: 0.95rem;
-            }
+            .nav-links.active { display: flex; }
+            .nav-links li { margin: 10px 0; }
+            .hero h2 { font-size: 1.6rem; }
         }
     </style>
 </head>
@@ -656,7 +510,7 @@
             <div class="logo">
                 <a href="#home">
                     <span class="mbi-badge">MBI</span>
-                    <h1>CV. MAHARANI BOILER INDONESIA</h1>
+                    <h1>Maharani Boiler dan Cooling Tower</h1>
                 </a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -664,213 +518,204 @@
             </div>
             <ul class="nav-links" id="nav-list">
                 <li><a href="#home">Beranda</a></li>
-                <li><a href="#services">Layanan Jasa</a></li>
-                <li><a href="#products">Produk Chemical</a></li>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#contact">Kontak & Email</a></li>
+                <li><a href="#boiler">Tentang Boiler</a></li>
+                <li><a href="#cooling">Cooling Tower</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section Teroptimasi SEO -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Layanan Jasa Boiler & Cooling Tower System Industri</h2>
+        <h2>Maharani Boiler dan Cooling Tower</h2>
         <p>
-            CV. Maharani Boiler Indonesia adalah mitra terpercaya untuk <strong>Jasa Chemical Cleaning Boiler</strong>, <strong>Maintenance & Overhaul Sistem Pemanas</strong>, pengadaan <strong>Water Treatment Chemical</strong>, serta <strong>Pembuatan & Pemasangan Cooling Tower System</strong> di seluruh Indonesia.
+            Bergerak dalam bidang perawatan Boiler dan Cooling Tower, melayani Chemical Cleaning, water treatment, overhaul, serta fabrikasi sistem penunjang industri terpercaya di Indonesia.
         </p>
         <a href="https://wa.me/628121802071" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi WhatsApp Kami</a>
     </section>
 
-    <!-- Layanan & Jasa Utama MBI -->
-    <section id="services" style="background-color: var(--light-color);">
+    <!-- A. TENTANG BOILER DAN PERMASALAHANNYA -->
+    <section id="boiler" style="background-color: var(--light-color);">
         <div class="section-title">
-            <h2>Layanan & Jasa Utama</h2>
+            <h2>Tentang Boiler dan Permasalahannya</h2>
         </div>
-        <div class="services-grid">
-            <!-- 1. JASA BOILER SYSTEM -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
+
+        <!-- A.1 Ruang Lingkup Pekerjaan -->
+        <div class="content-block">
+            <h3><i class="fas fa-tools"></i>Ruang Lingkup Pekerjaan</h3>
+            <p>Kami menyediakan layanan teknis komprehensif untuk memastikan sistem pemanas dan ketel uap industri Anda beroperasi dengan efisiensi puncak dan umur pakai yang panjang.</p>
+            <ul>
+                <li>Chemical Cleaning & Descaling pada bagian internal pipa serta bejana tekan boiler.</li>
+                <li>Overhaul, perbaikan, dan penggantian komponen mekanikal serta perpipaan uap.</li>
+                <li>Perawatan berkala, inspeksi visual, serta pencegahan kerusakan dini.</li>
+                <li>Fabrikasi dan pemasangan cerobong asap (*chimney*) serta sistem saluran pembuangan.</li>
+            </ul>
+        </div>
+
+        <!-- A.2 Boiler dan Permasalahannya -->
+        <div class="content-block">
+            <h3><i class="fas fa-exclamation-triangle"></i>Boiler dan Permasalahannya</h3>
+            <p>Operasional boiler secara terus-menerus rentan menghadapi berbagai masalah teknis utama yang berdampak pada efisiensi bahan bakar dan keselamatan kerja:</p>
+            <ul>
+                <li><strong>Pembentukan Kerak (Scale):</strong> Endapan mineral dari air umpan yang mengeras pada dinding pipa, menghambat perpindahan panas dan berisiko menyebabkan pipa melengkung atau pecah (*overheating*).</li>
+                <li><strong>Korosi & Karat:</strong> Oksidasi pada permukaan logam akibat kandungan oksigen terlarut atau pH air yang tidak terkontrol dengan baik.</li>
+                <li><strong>Kerusakan Pipa Api / Air (Tube Leakage):</strong> Kebocoran akibat keausan termal, korosi, maupun akumulasi kerak yang berlebihan.</li>
+            </ul>
+        </div>
+
+        <!-- A.3 Boiler Water Treatment -->
+        <div class="content-block">
+            <h3><i class="fas fa-flask"></i>Boiler Water Treatment (Nirec 800)</h3>
+            <p>Untuk mencegah permasalahan kerak dan korosi sejak dini, kami menyediakan produk kimia khusus perawatan air umpan boiler:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-top: 15px;">
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <img src="800.jpeg" alt="NIREC 800" class="product-img zoomable" style="max-height: 180px;">
+                    <p style="font-weight: bold; color: var(--primary-color);">NIREC 800 (Netto: 30 Ltr)</p>
                 </div>
-                <h3>Jasa Boiler System</h3>
-                <ul>
-                    <li>Chemical Cleaning & Descaling Boiler</li>
-                    <li>Overhaul & Retubing Pipa Api/Air</li>
-                    <li>Perawatan & Inspeksi Rutin Berkala</li>
-                    <li>Perbaikan Piping, Valve & Mechanical System</li>
-                    <li>Pembersihan Kerak & Karat Tangki Uap</li>
-                </ul>
-            </div>
-
-            <!-- 2. JASA COOLING TOWER SYSTEM -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-snowflake" style="color: #0288d1;"></i>
-                </div>
-                <h3>Jasa Cooling Tower System</h3>
-                <ul>
-                    <li>Pembuatan & Pemasangan Unit Cooling Tower</li>
-                    <li>Penggantian & Perakitan Media Filler</li>
-                    <li>Pembersihan Lumut, Slime & Kerak Basin</li>
-                    <li>Instalasi System Perpipaan & Dosing Pump</li>
-                    <li>Perawatan & Inspeksi Sistem Pendingin</li>
-                </ul>
-            </div>
-
-            <!-- 3. WATER TREATMENT CHEMICAL -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-flask" style="color: #2e7d32;"></i>
-                </div>
-                <h3>Water Treatment Chemical</h3>
-                <ul>
-                    <li>Pencegahan Kerak & Karat Sistem Air Industri</li>
-                    <li>Pengontrolan Lumut & Bakteri Anaerobik</li>
-                    <li>Pembersihan & Pengangkatan Kerak Membandel</li>
-                    <li>Penetrasi Sisa Asam (Neutralizer System)</li>
-                    <li>Konsultasi & Analisis Kualitas Air Operasional</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Produk Chemical Maintenance -->
-    <section id="products">
-        <div class="section-title">
-            <h2>Produk Chemical Maintenance Utama</h2>
-        </div>
-        <div class="grid-container">
-            <!-- NIREC 800 -->
-            <div class="card">
-                <img src="800.jpeg" alt="NIREC 800 - Boiler Water Treatment" class="product-img zoomable">
-                <h3>NIREC 800</h3>
-                <p><strong>Boiler Water Treatment:</strong> Mencegah kerak & karat pada media pipa dan dinding boiler. Membentuk lapisan film pelindung & meningkatkan Heat Transfer. (Netto: 30 Ltr)</p>
-            </div>
-
-            <!-- NIREC 700 K -->
-            <div class="card">
-                <img src="700K.jpeg" alt="NIREC 700 K - Anti Kerak Cooling Tower" class="product-img zoomable">
-                <h3>NIREC 700 K</h3>
-                <p><strong>Anti Kerak Cooling Tower:</strong> Control Scale & Corrosion Inhibitor efisien untuk mencegah kerak & karat pada media cooling tower. (Netto: 30 Ltr)</p>
-            </div>
-
-            <!-- NIREC 700 L -->
-            <div class="card">
-                <img src="700L.jpeg" alt="NIREC 700 L - Anti Lumut" class="product-img zoomable">
-                <h3>NIREC 700 L</h3>
-                <p><strong>Anti Lumut (Algae & Slime Control):</strong> Mencegah pembentukan lumut dan mengontrol bakteri anaerobic pada open cooling system. (Netto: 30 Ltr)</p>
-            </div>
-
-            <!-- NIREC 900 -->
-            <div class="card">
-                <img src="900.jpeg" alt="NIREC 900 - Scale Remover" class="product-img zoomable">
-                <h3>NIREC 900</h3>
-                <p><strong>Scale Remover:</strong> Cairan pembersih kerak dan karat pada mesin Boiler, Cooling Tower, Chiller, Cooler, dan Heat Exchanger. (Netto: 30 Ltr)</p>
-            </div>
-
-            <!-- NIREC 900 A -->
-            <div class="card">
-                <img src="900A.jpeg" alt="NIREC 900 A - Neutralizer" class="product-img zoomable">
-                <h3>NIREC 900 A</h3>
-                <p><strong>Neutralizer:</strong> Menetralkan sisa-sisa asam yang masih melekat pada mesin setelah dilakukan proses cleaning agar aman. (Netto: 30 Ltr)</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galeri Foto Pekerjaan -->
-    <section id="gallery" style="background-color: var(--light-color);">
-        <div class="section-title">
-            <h2>Galeri Foto Pekerjaan</h2>
-        </div>
-
-        <!-- Kategori Pekerjaan Boiler -->
-        <div class="gallery-category-title">
-            <i class="fas fa-fire-alt" style="color: var(--accent-color);"></i>
-            Pekerjaan Boiler System
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="boiler1.jpeg" alt="Proses Cleaning & Removal Kerak Boiler" class="zoomable">
-                <div class="gallery-caption">Proses Cleaning & Removal Kerak Boiler</div>
-            </div>
-            <div class="gallery-item">
-                <img src="boiler2.jpeg" alt="Inspeksi & Pemeliharaan Dalam Tangki" class="zoomable">
-                <div class="gallery-caption">Inspeksi & Pemeliharaan Dalam Tangki</div>
-            </div>
-            <div class="gallery-item">
-                <img src="boiler3.jpeg" alt="Instalasi & Perbaikan Piping System" class="zoomable">
-                <div class="gallery-caption">Instalasi & Perbaikan Piping System</div>
-            </div>
-            <div class="gallery-item">
-                <img src="boiler4.jpeg" alt="Tim Teknisi Profesional di Lapangan" class="zoomable">
-                <div class="gallery-caption">Tim Teknisi Profesional di Lapangan</div>
-            </div>
-        </div>
-
-        <!-- Kategori Pekerjaan Cooling Tower -->
-        <div class="gallery-category-title">
-            <i class="fas fa-snowflake" style="color: #0288d1;"></i>
-            Pembuatan & Pemasangan Cooling Tower System
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="cooling1.jpeg" alt="Proses Pembuatan Unit Cooling Tower Industri" class="zoomable">
-                <div class="gallery-caption">Proses Pembuatan Unit Cooling Tower Industri</div>
-            </div>
-            <div class="gallery-item">
-                <img src="cooling2.jpeg" alt="Pemasangan & Perakitan Media Filler Cooling Tower" class="zoomable">
-                <div class="gallery-caption">Pemasangan & Perakitan Media Filler Cooling Tower</div>
-            </div>
-            <div class="gallery-item">
-                <img src="cooling3.jpeg" alt="Pemasangan System Perpipaan (Piping) Cooling Tower" class="zoomable">
-                <div class="gallery-caption">Pemasangan System Perpipaan (Piping) Cooling Tower</div>
-            </div>
-            <div class="gallery-item">
-                <img src="cooling4.jpeg" alt="Proses Instalasi & Pengujian Unit Cooling Tower" class="zoomable">
-                <div class="gallery-caption">Proses Instalasi & Pengujian Unit Cooling Tower</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dokumentasi Video -->
-    <section id="video">
-        <div class="section-title">
-            <h2>Dokumentasi Video</h2>
-        </div>
-        <div class="video-grid">
-            <div class="video-card">
-                <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/o18dM-lIHVM?enablejsapi=1" 
-                        title="Demo Cleaning Boiler" 
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-info">
-                    <h4>Proses Chemical Cleaning Boiler</h4>
+                <div style="flex: 2; min-width: 280px;">
+                    <p><strong>Penjelasan Produk:</strong> NIREC 800 adalah formula khusus <em>Boiler Water Treatment</em> yang berfungsi aktif mencegah pembentukan kerak dan mengendalikan laju korosi pada media pipa serta dinding bagian dalam boiler. Cairan ini membantu membentuk lapisan film pelindung mikroskopis pada permukaan logam serta meningkatkan efisiensi perpindahan panas (*heat transfer*).</p>
                 </div>
             </div>
-            <div class="video-card">
-                <div class="video-container">
-                    <video controls poster="poster-video.jpg">
-                        <source src="boiler.mp4" type="video/mp4">
-                        Browser Anda tidak mendukung pemutaran video.
-                    </video>
+        </div>
+
+        <!-- A.4 Chemical Cleaning Boiler -->
+        <div class="content-block">
+            <h3><i class="fas fa-broom"></i>Chemical Cleaning Boiler</h3>
+            <p>Ketika kerak sudah tebal menempel, diperlukan proses pembersihan kimia menggunakan zat pembersih profesional:</p>
+            <div class="grid-container" style="margin-top: 20px;">
+                <div class="card" style="text-align: left;">
+                    <img src="900.jpeg" alt="NIREC 900" class="product-img zoomable">
+                    <h3>NIREC 900 (Scale Remover)</h3>
+                    <p><strong>Penjelasan:</strong> Cairan pembersih berformula kuat untuk melarutkan dan merontokkan kerak mineral membandel serta karat pada mesin Boiler, Cooling Tower, Chiller, dan Heat Exchanger tanpa merusak struktur logam dasar jika diaplikasikan sesuai prosedur. (Netto: 30 Ltr)</p>
                 </div>
-                <div class="video-info">
-                    <h4>Prosedur Overhaul & Inspeksi Piping</h4>
+                <div class="card" style="text-align: left;">
+                    <img src="900A.jpeg" alt="NIREC 900 A" class="product-img zoomable">
+                    <h3>NIREC 900A (Neutralizer)</h3>
+                    <p><strong>Penjelasan:</strong> Zat penetral yang digunakan setelah proses *acid cleaning* selesai. Berfungsi untuk menetralkan sisa-sisa asam yang masih melekat pada permukaan mesin agar kembali ke tingkat pH yang aman sebelum unit dioperasikan kembali. (Netto: 30 Ltr)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- A.5 Beberapa Pekerjaan yg kita lakukan -->
+        <div class="content-block">
+            <h3><i class="fas fa-images"></i>Beberapa Pekerjaan yang Kami Lakukan</h3>
+            <div class="gallery-category-title">Foto Cleaning Boiler</div>
+            <div class="gallery-grid" style="margin-bottom: 20px;">
+                <div class="gallery-item">
+                    <img src="boiler1.jpeg" alt="Proses Cleaning & Removal Kerak Boiler" class="zoomable">
+                    <div class="gallery-caption">Proses Cleaning & Removal Kerak Boiler</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="boiler2.jpeg" alt="Inspeksi & Pemeliharaan Dalam Tangki" class="zoomable">
+                    <div class="gallery-caption">Inspeksi & Pemeliharaan Dalam Tangki</div>
+                </div>
+            </div>
+
+            <div class="gallery-category-title">Foto Penggantian Pipa Boiler</div>
+            <div class="gallery-grid" style="margin-bottom: 20px;">
+                <div class="gallery-item">
+                    <img src="boiler3.jpeg" alt="Penggantian & Retubing Pipa Boiler" class="zoomable">
+                    <div class="gallery-caption">Penggantian & Retubing Pipa Boiler</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="boiler4.jpeg" alt="Perbaikan Jalur Pipa & Mekanikal" class="zoomable">
+                    <div class="gallery-caption">Perbaikan Jalur Pipa & Sistem Mekanikal</div>
+                </div>
+            </div>
+
+            <div class="gallery-category-title">Foto Pembuatan Cerobong</div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cooling1.jpeg" alt="Pembuatan dan Instalasi Cerobong / Ducting" class="zoomable">
+                    <div class="gallery-caption">Fabrikasi & Pemasangan Cerobong Industri</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Informasi Kontak Lengkap & Email -->
+    <!-- B. TENTANG COOLING TOWER DAN PERMASALAHANNYA -->
+    <section id="cooling">
+        <div class="section-title">
+            <h2>Tentang Cooling Tower dan Permasalahannya</h2>
+        </div>
+
+        <!-- B.1 & B.2 Penjelasan & Permasalahan Cooling Tower -->
+        <div class="content-block">
+            <h3><i class="fas fa-snowflake"></i>Penjelasan & Permasalahan Cooling Tower</h3>
+            <p><strong>Penjelasan:</strong> Cooling tower (menara pendingin) adalah perangkat penukar panas yang digunakan untuk membuang panas buangan industri ke atmosfer melalui penguapan sebagian air sirkulasi.</p>
+            <p><strong>Permasalahan Umum:</strong> Karena sistem kerjanya kontak langsung dengan udara terbuka, cooling tower sangat rentan terhadap:</p>
+            <ul>
+                <li><strong>Pertumbuhan Lumut & Mikroorganisme:</strong> Alga, lumut, dan bakteri (seperti <em>Legionella</em>) berkembang biak dengan cepat di area basah dan terkena sinar matahari.</li>
+                <li><strong>Kerak Air (*Scale Accumulation*):</strong> Penguapan air secara terus-menerus menyebabkan konsentrasi mineral meningkat dan mengendap menjadi kerak keras pada media *filler* (*honeycomb*).</li>
+                <li><strong>Korosi Komponen Struktur:</strong> Penurunan kualitas air pendingin yang memicu pengkaratan pada rangka besi, pipa, maupun bak penampung (*basin*).</li>
+            </ul>
+        </div>
+
+        <!-- B.2 Cooling Tower Treatment -->
+        <div class="content-block">
+            <h3><i class="fas fa-shield-alt"></i>Cooling Tower Treatment</h3>
+            <p>Perawatan kimia terpadu untuk menjaga kualitas air pendingin cooling tower:</p>
+            <div class="grid-container" style="margin-top: 20px;">
+                <div class="card" style="text-align: left;">
+                    <img src="700K.jpeg" alt="NIREC 700 K" class="product-img zoomable">
+                    <h3>NIREC 700 K (Anti Kerak)</h3>
+                    <p><strong>Penjelasan:</strong> Inhibitor korosi dan pengendali kerak (*Scale & Corrosion Inhibitor*) efisien tinggi yang dirancang khusus untuk mencegah terbentuknya endapan mineral pada media pendingin cooling tower. (Netto: 30 Ltr)</p>
+                </div>
+                <div class="card" style="text-align: left;">
+                    <img src="700L.jpeg" alt="NIREC 700 L" class="product-img zoomable">
+                    <h3>NIREC 700 L (Anti Lumut)</h3>
+                    <p><strong>Penjelasan:</strong> Formula pengendali alga, lumut, dan bakteri anaerobik (*Algae & Slime Control*) untuk menjaga kebersihan air pada sistem pendingin terbuka sehingga aliran udara dan sirkulasi tetap optimal. (Netto: 30 Ltr)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- B.3 Chemical Cleaning Cooling Tower -->
+        <div class="content-block">
+            <h3><i class="fas fa-water"></i>Chemical Cleaning Cooling Tower</h3>
+            <p>Prosedur pembersihan total untuk mengembalikan performa pendinginan unit:</p>
+            <div class="grid-container" style="margin-top: 20px;">
+                <div class="card" style="text-align: left;">
+                    <img src="900.jpeg" alt="NIREC 900 Scale Remover" class="product-img zoomable">
+                    <h3>Scale Remover (NIREC 900)</h3>
+                    <p><strong>Penjelasan & Aplikasi:</strong> Larutan aktif untuk merontokkan kerak tebal dan endapan kalsium yang menutupi sirip-sirip media filler serta pipa penukar panas cooling tower. Memulihkan kapasitas pertukaran panas secara drastis. (Netto: 30 Ltr)</p>
+                </div>
+                <div class="card" style="text-align: left;">
+                    <img src="900A.jpeg" alt="NIREC 900A Neutralizer" class="product-img zoomable">
+                    <h3>Neutralizer (NIREC 900A)</h3>
+                    <p><strong>Penjelasan:</strong> Digunakan untuk menetralkan sisa cairan kimia pembersih setelah proses *cleaning* cooling tower tuntas, memastikan komponen logam aman dari risiko korosi susulan. (Netto: 30 Ltr)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- B.4 Foto-foto Pekerjaan -->
+        <div class="content-block">
+            <h3><i class="fas fa-camera"></i>Foto-foto Pekerjaan Cooling Tower</h3>
+            <div class="gallery-category-title">Dokumentasi Pemeliharaan & Pemasangan Cooling Tower</div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cooling1.jpeg" alt="Proses Pembuatan Unit Cooling Tower Industri" class="zoomable">
+                    <div class="gallery-caption">Proses Pembuatan Unit Cooling Tower Industri</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cooling2.jpeg" alt="Pemasangan & Perakitan Media Filler Cooling Tower" class="zoomable">
+                    <div class="gallery-caption">Pemasangan & Perakitan Media Filler Cooling Tower</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cooling3.jpeg" alt="Pemasangan System Perpipaan Cooling Tower" class="zoomable">
+                    <div class="gallery-caption">Pemasangan Sistem Perpipaan (Piping)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cooling4.jpeg" alt="Proses Instalasi & Pengujian Unit" class="zoomable">
+                    <div class="gallery-caption">Proses Instalasi & Pengujian Unit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Informasi -->
     <section id="contact" style="background-color: var(--light-color);">
         <div class="section-title">
-            <h2>Kontak Lengkap & Layanan Email</h2>
+            <h2>Kontak & Informasi Perusahaan</h2>
         </div>
         <div class="grid-container">
             <div class="card">
@@ -892,38 +737,25 @@
             </div>
             <div class="card">
                 <i class="fas fa-map-marker-alt" style="font-size: 1.8rem; color: var(--accent-color); margin-bottom: 10px;"></i>
-                <h3>Alamat Perusahaan</h3>
+                <h3>Alamat Kantor</h3>
                 <p>Jl. Kepodang I, Bumi Pasar Kemis Indah, Blok G-2 No.19, Tangerang - Banten, 15560</p>
             </div>
         </div>
 
-        <!-- Tombol Media Sosial & Email Direct -->
         <div class="social-box">
-            <a href="https://wa.me/628121802071" class="social-btn bg-wa" target="_blank">
-                <i class="fab fa-whatsapp"></i> Chat WhatsApp
-            </a>
-            <a href="mailto:maharani.cahayateknik@yahoo.com" class="social-btn bg-email">
-                <i class="fas fa-envelope"></i> Kirim Email
-            </a>
-            <a href="https://www.instagram.com/maharaniboilerindonesia" class="social-btn bg-ig" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61593804041718" class="social-btn bg-fb" target="_blank">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" class="social-btn bg-tiktok" target="_blank">
-                <i class="fab fa-tiktok"></i> TikTok
-            </a>
+            <a href="https://wa.me/628121802071" class="social-btn bg-wa" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+            <a href="mailto:maharani.cahayateknik@yahoo.com" class="social-btn bg-email"><i class="fas fa-envelope"></i> Kirim Email</a>
+            <a href="https://www.instagram.com/maharaniboilerindonesia" class="social-btn bg-ig" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61593804041718" class="social-btn bg-fb" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.tiktok.com/@maharaniboilerindonesia" class="social-btn bg-tiktok" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
         </div>
     </section>
 
-    <!-- Floating Social & Email Buttons -->
+    <!-- Floating Socials -->
     <div class="floating-socials">
         <a href="https://wa.me/628121802071" class="floating-btn bg-wa" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         <a href="mailto:maharani.cahayateknik@yahoo.com" class="floating-btn bg-email" title="Kirim Email"><i class="fas fa-envelope"></i></a>
         <a href="https://www.instagram.com/maharaniboilerindonesia" class="floating-btn bg-ig" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61593804041718" class="floating-btn bg-fb" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" class="floating-btn bg-tiktok" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
     </div>
 
     <!-- Footer -->
@@ -931,26 +763,18 @@
         <div class="footer-logo">
             <span class="mbi-badge">MBI</span>
         </div>
-        <div class="footer-socials">
-            <a href="https://wa.me/628121802071" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:maharani.cahayateknik@yahoo.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.instagram.com/maharaniboilerindonesia" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61593804041718" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.tiktok.com/@maharaniboilerindonesia?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <p>&copy; 2026 CV. MAHARANI BOILER INDONESIA. All Rights Reserved.</p>
+        <p>&copy; 2026 Maharani Boiler dan Cooling Tower. All Rights Reserved.</p>
     </footer>
 
-    <!-- Lightbox Popup Modal Structure -->
+    <!-- Lightbox Modal -->
     <div class="lightbox-modal" id="lightbox">
         <span class="lightbox-close" id="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-img" src="" alt="Zoom Foto">
         <div class="lightbox-caption" id="lightbox-caption"></div>
     </div>
 
-    <!-- JavaScript Navigation & Lightbox -->
+    <!-- JavaScript -->
     <script>
-        // Mobile Menu Toggle
         const mobileMenu = document.getElementById('mobile-menu');
         const navList = document.getElementById('nav-list');
 
@@ -964,13 +788,11 @@
             });
         });
 
-        // Lightbox Zoom functionality
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
         const lightboxCaption = document.getElementById('lightbox-caption');
         const lightboxClose = document.getElementById('lightbox-close');
 
-        // Target all zoomable images
         document.querySelectorAll('.zoomable').forEach(image => {
             image.addEventListener('click', () => {
                 lightbox.classList.add('active');
@@ -979,7 +801,6 @@
             });
         });
 
-        // Close Lightbox on Click Close Button or Outside Image
         lightboxClose.addEventListener('click', () => {
             lightbox.classList.remove('active');
         });
@@ -990,13 +811,11 @@
             }
         });
 
-        // Close Lightbox on ESC key press
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 lightbox.classList.remove('active');
             }
         });
     </script>
-
 </body>
 </html>
